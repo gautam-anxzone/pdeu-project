@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    /* PDEU Academic Color System */
+    --background: 42 41% 95%;
+    --foreground: 220 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 15%;
+
+    /* Deep Navy - Academic Authority */
+    --primary: 225 55% 24%;
+    --primary-foreground: 0 0% 100%;
+
+    /* PDEU Red - Academic Identity */
+    --secondary: 351 74% 37%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted surfaces */
+    --muted: 42 30% 92%;
+    --muted-foreground: 220 10% 45%;
+
+    /* Gold Accent - CTAs */
+    --accent: 40 65% 55%;
+    --accent-foreground: 220 25% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 351 74% 37%;
+
+    --radius: 0.5rem;
+
+    /* Custom tokens */
+    --brand-red: 351 74% 37%;
+    /* #A6192E */
+    --navy-deep: 225 55% 18%;
+    --navy-light: 225 40% 35%;
+    --red-dark: 351 74% 30%;
+    --red-light: 351 60% 45%;
+    --gold-warm: 38 70% 50%;
+    --gold-light: 40 80% 65%;
+    --cream: 42 41% 95%;
+    --cream-dark: 42 30% 88%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(180deg, hsl(42 41% 95%) 0%, hsl(42 30% 92%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(351 74% 37%) 0%, hsl(351 60% 45%) 100%);
+    --gradient-brand: linear-gradient(135deg, hsl(351 74% 37%) 0%, hsl(351 60% 45%) 100%);
+
+    /* Shadows */
+    --shadow-card: 0 4px 20px -4px hsl(225 55% 24% / 0.08);
+    --shadow-form: 0 8px 32px -8px hsl(225 55% 24% / 0.15);
+    --shadow-cta: 0 4px 16px -2px hsl(38 70% 50% / 0.35);
+  }
+
+  .dark {
+    --background: 225 55% 8%;
+    --foreground: 40 20% 98%;
+    --card: 225 50% 12%;
+    --card-foreground: 40 20% 98%;
+    --popover: 225 50% 12%;
+    --popover-foreground: 40 20% 98%;
+    --primary: 40 65% 55%;
+    --primary-foreground: 225 55% 15%;
+    --secondary: 351 74% 45%;
+    --secondary-foreground: 40 20% 98%;
+    --muted: 225 40% 18%;
+    --muted-foreground: 220 15% 65%;
+    --accent: 40 65% 55%;
+    --accent-foreground: 225 55% 15%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 225 40% 20%;
+    --input: 225 40% 20%;
+    --ring: 40 65% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-weight: 400;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+  }
+}
+
+@layer components {
+  .btn-cta {
+    @apply inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-lg transition-all duration-200;
+    background: var(--gradient-cta);
+    color: hsl(var(--foreground));
+    box-shadow: var(--shadow-cta);
+  }
+
+  .btn-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px -4px hsl(38 70% 50% / 0.45);
+  }
+
+  .btn-secondary-cta {
+    @apply inline-flex items-center justify-center px-6 py-3 text-sm font-semibold rounded-lg transition-all duration-200;
+    background: hsl(var(--secondary));
+    color: hsl(var(--secondary-foreground));
+  }
+
+  .btn-secondary-cta:hover {
+    background: hsl(var(--red-dark));
+  }
+
+  .card-form {
+    @apply bg-card rounded-xl p-8;
+    box-shadow: var(--shadow-form);
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold text-primary mb-4;
+  }
+
+  .highlight-card {
+    @apply flex items-center gap-3 p-4 rounded-lg;
+    background: hsl(var(--cream));
+    border: 1px solid hsl(var(--border));
+  }
+
+  .stat-card {
+    @apply p-6 rounded-xl text-center;
+    background: hsl(var(--card));
+    box-shadow: var(--shadow-card);
+  }
+
+  .recruiter-logo {
+    @apply h-12 w-auto grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: var(--gradient-cta);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-cream {
+    background: hsl(var(--cream));
+  }
+
+  .bg-cream-dark {
+    background: hsl(var(--cream-dark));
+  }
+}

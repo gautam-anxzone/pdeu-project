@@ -83,7 +83,7 @@ const ApplicationProcess = () => {
                       <step.icon className="w-8 h-8 text-secondary" />
                     </div>
                   </div>
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 ml-10 lg:ml-8 w-10 h-10 rounded-full bg-gradient-to-br from-navy-light to-primary text-white flex items-center justify-center font-bold text-sm shadow-xl border-4 border-white">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-gradient-to-br from-navy-light to-primary text-white flex items-center justify-center font-bold text-sm shadow-xl border-4 border-white">
                     {step.step}
                   </div>
                 </div>
@@ -100,7 +100,7 @@ const ApplicationProcess = () => {
 
                 {/* Mobile/Tablet Connector */}
                 {index < steps.length - 1 && (
-                  <div className="lg:hidden mt-8 text-secondary/30 animate-pulse">
+                  <div className="lg:hidden mt-8 flex justify-center text-secondary/30 animate-pulse">
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M12 5v14M5 12l7 7 7-7" className="md:hidden" />
                       <path d="M5 12h14M12 5l7 7-7 7" className="hidden md:block" />

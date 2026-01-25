@@ -93,7 +93,7 @@ const PlacementsSection = () => {
         </div>
 
         {/* Enhanced Contact Section - Left Aligned style */}
-        <div className="bg-primary rounded-[2.5rem] p-6 md:p-10 lg:p-20 text-white relative overflow-hidden shadow-2xl shadow-primary/30">
+        <div className="bg-primary rounded-[2rem] sm:rounded-[2.5rem] p-6 sm:p-10 lg:p-16 text-white relative overflow-hidden shadow-2xl shadow-primary/30">
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/10 rounded-full -mr-32 -mb-32 blur-[100px]" />
           <div className="absolute top-0 left-0 w-64 h-64 bg-secondary/5 rounded-full -ml-32 -mt-32 blur-[80px]" />
 
@@ -102,10 +102,10 @@ const PlacementsSection = () => {
               <p className="text-[#f9f5ec] mb-4 tracking-[0.2em] uppercase text-xs">
                 Take the Next Step
               </p>
-              <h3 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
+              <h3 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8">
                 Ready to Join the PDEU Legacy?
               </h3>
-              <p className="text-xl text-white/70 mb-10 leading-relaxed">
+              <p className="text-base sm:text-lg lg:text-xl text-white/70 mb-6 sm:mb-10 leading-relaxed">
                 Our admissions team is here to guide you through every step of your journey toward a future in excellence.
               </p>
 
@@ -137,9 +137,9 @@ const PlacementsSection = () => {
             </div>
 
             <div className="lg:pl-10">
-              <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-6 md:p-10 border border-white/20 shadow-2xl">
-                <h4 className="font-display text-2xl font-bold mb-6 text-[#f9f5ec]">Personalized Consultation</h4>
-                <p className="text-white/70 text-base mb-8">
+              <div className="bg-white/10 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 border border-white/20 shadow-2xl">
+                <h4 className="font-display text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-[#f9f5ec]">Personalized Consultation</h4>
+                <p className="text-white/70 text-sm sm:text-base mb-6 sm:mb-8">
                   Connect with our admissions counselors for guidance on program details, eligibility, and academic fit.
                 </p>
                 <Button className="w-full h-14 bg-secondary hover:bg-white hover:text-secondary text-white text-sm uppercase tracking-widest rounded-xl transition-all shadow-xl shadow-secondary/20">

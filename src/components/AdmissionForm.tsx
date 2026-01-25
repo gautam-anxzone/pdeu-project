@@ -70,7 +70,7 @@ const AdmissionForm = () => {
               <Clock className="w-3.5 h-3.5 text-secondary" />
               Admissions 2026
             </div>
-            <h3 className="font-display text-4xl font-bold text-primary leading-tight">
+            <h3 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-primary leading-tight">
               Apply <span className="text-secondary underline decoration-secondary/30 decoration-4 underline-offset-8">Now</span>
             </h3>
             <p className="text-black/70 text-sm mt-4 max-w-sm">
@@ -234,7 +234,7 @@ const AdmissionForm = () => {
       </div>
 
       {/* Credits Watermark Box */}
-      <div className="mt-10 px-8 py-14 rounded-[1.5rem] bg-white/40 backdrop-blur-md border border-black/5 flex flex-col items-center gap-4 text-center shadow-sm">
+      <div className="mt-6 sm:mt-10 px-4 sm:px-8 py-8 sm:py-14 rounded-[1.5rem] bg-white/40 backdrop-blur-md border border-black/5 flex flex-col items-center gap-3 sm:gap-4 text-center shadow-sm">
         <p className="text-xl sm:text-xl uppercase tracking-[0.2em] text-black/40 font-bold">
           Demo Admission Form <br />Created For PDEU
         </p>

@@ -50,17 +50,17 @@ const HeroSection = () => {
                   Admissions Open 2026-27
                 </p>
               </div>
-              <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-6">
+              <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] mb-4 sm:mb-6">
                 <span className="text-[#A6192E]">B.Tech</span> <br />
                 <span className="text-primary">in Computer Engineering</span>
               </h1>
-              <p className="text-lg md:text-xl text-black max-w-xl leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl text-black max-w-xl leading-relaxed">
                 Transform your passion for technology into a rewarding career. Our industry-aligned curriculum, world-class faculty, and strong placement record prepare you for global opportunities in the tech industry.
               </p>
             </div>
 
             {/* Quick Facts */}
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8">
               {quickFacts.map((fact) => (
                 <div key={fact.label} className="group cursor-default">
                   <div className="flex items-center gap-4">
@@ -77,7 +77,7 @@ const HeroSection = () => {
             </div>
 
             {/* Key Highlights */}
-            <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-1 gap-4">
+            <div className="grid grid-cols-1 gap-3 sm:gap-4">
               {highlights.map((item) => (
                 <div
                   key={item.text}
@@ -94,7 +94,7 @@ const HeroSection = () => {
             {/* Eligibility & Deadline */}
             <div className="relative group overflow-hidden rounded-2xl border border-primary/10 shadow-sm">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-50 group-hover:opacity-100 transition-opacity" />
-              <div className="relative backdrop-blur-xl p-6 flex flex-wrap gap-8 items-center justify-between">
+              <div className="relative backdrop-blur-xl p-4 sm:p-6 flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-8 items-start sm:items-center justify-between">
                 <div className="max-w-[300px]">
                   <p className="text-[10px] text-secondary font-black uppercase tracking-widest mb-1.5 flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse" />

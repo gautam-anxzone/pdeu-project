@@ -33,7 +33,7 @@ const CampusGallery = () => {
                     <p className="text-secondary mb-3 tracking-[0.2em] uppercase text-xs font-medium">
                         Campus Life
                     </p>
-                    <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-6">
+                    <h2 className="font-display text-2xl sm:text-4xl md:text-5xl font-bold text-primary mb-4 sm:mb-6">
                         State-of-the-Art Infrastructure
                     </h2>
                     <div className="h-1 w-20 bg-secondary mb-8" />
@@ -66,9 +66,9 @@ const CampusGallery = () => {
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
-                        <div className="flex justify-center gap-6 mt-12">
-                            <CarouselPrevious className="relative static translate-y-0 h-14 w-14 rounded-full border-2 border-primary/10 bg-white text-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-xl" />
-                            <CarouselNext className="relative static translate-y-0 h-14 w-14 rounded-full border-2 border-primary/10 bg-white text-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-xl" />
+                        <div className="flex justify-center gap-4 sm:gap-6 mt-8 sm:mt-12">
+                            <CarouselPrevious className="relative static translate-y-0 h-10 w-10 sm:h-14 sm:w-14 rounded-full border-2 border-primary/10 bg-white text-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-xl" />
+                            <CarouselNext className="relative static translate-y-0 h-10 w-10 sm:h-14 sm:w-14 rounded-full border-2 border-primary/10 bg-white text-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-xl" />
                         </div>
                     </Carousel>
                 </div>

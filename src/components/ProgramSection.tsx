@@ -156,7 +156,7 @@ const ProgramSection = () => {
                 </h3>
               </div>
 
-              <div className="grid grid-cols-2 gap-y-14 gap-x-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 sm:gap-y-14 gap-x-6 sm:gap-x-8">
                 {whyPDEU.map((item) => (
                   <div key={item.label} className="group border-l-2 border-[#f9f5ec]/20 pl-4 hover:border-[#f9f5ec] transition-colors">
                     <div className="text-3xl font-bold text-[#f9f5ec] mb-0.5">{item.stat}</div>
@@ -188,7 +188,7 @@ const ProgramSection = () => {
             </Button>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
             {careerPaths.map((career) => (
               <div
                 key={career.title}
